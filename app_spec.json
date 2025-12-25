@@ -1,0 +1,24 @@
+{
+  "app": {
+    "name": "Versiculo Diario",
+    "intent": "Inspiração espiritual diária com trechos bíblicos aleatórios",
+    "user": "Pessoas que buscam reflexão bíblica diária",
+    "primaryAction": "Receber um versículo aleatório da Bíblia"
+  },
+  "backend": {
+    "tool": "obter_versiculo_diario",
+    "responsibility": "Retornar um trecho bíblico aleatório"
+  },
+  "widget": {
+    "responsibility": "Exibir o versículo de forma clara e bonita"
+  },
+  "nonGoals": [
+    "Autenticação de usuários",
+    "Histórico de versículos salvos",
+    "Notificações push"
+  ],
+  "dataBoundaries": {
+    "structuredContent": "Apenas referência e texto do versículo",
+    "meta": "Apenas dados necessários para renderização do widget"
+  }
+}

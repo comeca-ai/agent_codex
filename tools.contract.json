@@ -1,0 +1,32 @@
+{
+  "tools": [
+    {
+      "name": "obter_versiculo_diario",
+      "description": "Use this when the user asks for a daily Bible verse or spiritual inspiration. Do not use for explanations, commentary, or multi-verse study.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "reference": { "type": "string" },
+          "text": { "type": "string" }
+        },
+        "required": ["reference", "text"],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false
+      },
+      "_meta": {
+        "openai/outputTemplate": "versiculoWidget",
+        "openai/widgetAccessible": true
+      }
+    }
+  ]
+}
